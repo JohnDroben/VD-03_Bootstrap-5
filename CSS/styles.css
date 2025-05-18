@@ -1,0 +1,142 @@
+:root {
+    --main-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --dark-bg: #1a1a2e;
+    --text-light: #e6e6e6;
+}
+
+/* Глобальные стили */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Навбар */
+.navbar {
+    background: var(--main-gradient) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-light) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    padding-top: 80px;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--main-gradient);
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+/* Карточки */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Аккордеон */
+.accordion-button {
+    font-weight: 600;
+    background: rgba(118, 75, 162, 0.1) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: rgba(118, 75, 162, 0.2) !important;
+    color: #2c3e50;
+}
+
+/* Футер */
+footer {
+    background: var(--dark-bg);
+    color: var(--text-light);
+    margin-top: auto;
+}
+
+.footer-social a {
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.footer-social a:hover {
+    color: #667eea;
+    transform: translateY(-3px);
+}
+
+/* Карусель */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-title, #slider, #cards, #accordion {
+    animation: fadeIn 0.8s ease-out;
+}

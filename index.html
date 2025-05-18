@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Мой Сайт</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#slider">Слайдер</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cards">Карточки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accordion">Аккордеон</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основное содержимое -->
+    <main class="container my-5">
+       <!-- Секция слайдера -->
+        <section id="slider" class="mb-5">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/тигренок с пиццей.png"
+                                 class="img-fluid"
+                                 style="max-height: 200px;"
+                                 alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/тигренок с пиццей.png"
+                                 class="img-fluid"
+                                 style="max-height: 200px;"
+                                 alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/тигренок с пиццей.png"
+                                 class="img-fluid"
+                                 style="max-height: 200px;"
+                                 alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Секция карточек -->
+        <section id="cards" class="mb-5">
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/Бургер с говядиной.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Бургер с говядиной</h5>
+                            <p class="card-text">Бургер с говядиной — это сэндвич, в котором используется говяжья котлета, булочка, различные овощи и соусы</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/Паста.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Паста</h5>
+                            <p class="card-text">Паста — это традиционное итальянское блюдо,
+                                которое готовится из макаронных изделий и различных топпингов.
+                                Например, фарфалле хорошо сочетается с морепродуктами и овощными соусами,
+                                а спагетти — с курицей, грибами и сливочным соусом.</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/Тирамису.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Тирамису</h5>
+                            <p class="card-text">Тирамису — итальянский многослойный десерт,
+                                в состав которого входят сыр маскарпоне, кофе (обычно эспрессо),
+                                куриные яйца, сахар и печенье савоярди.</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция аккордеона -->
+        <section id="accordion">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Как приготовить бургер с говядиной?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Рецепт бургера с говяжьей котлетой и свежими овощами:
+                            Ингредиенты:
+                            500 г мелко нарезанной говядины высшего качества;
+                            1 яйцо;
+                            1/4 чашки сухарей;
+                            1 ст. л. горчицы;
+                            1 ст. л. соевого соуса;
+                            1 ч. л. соли;
+                            1/2 ч. л. чёрного перца;
+                            4 булочки для бургера;
+                            1 помидор;
+                            1 лист салата;
+                            1/2 лука;
+                            4 ломтика сыра;
+                            2 ст. л. майонеза;
+                            1 ст. л. кетчупа.
+                            Приготовление:
+                            В большой миске смешайте нарезанную говядину, яйцо, сухари, горчицу, соевый соус, соль и перец.
+                            Хорошо перемешайте все ингредиенты, чтобы они хорошо соединились. Сформируйте котлеты диаметром примерно 10 см и толщиной около 2 см.
+                            Нарежьте помидор на тонкие ломтики, лук — на тонкие полукольца. Полоскайте листья салата, чтобы удалить пыль и грязь.
+                            Нагрейте сковороду на среднем огне. Положите на сковороду котлеты и жарьте их на каждой стороне около 3 минуты, пока они не станут золотистыми.
+                            Разрежьте булочки пополам и положите на гриль или обжарьте на сухой сковороде до золотистого цвета.
+                            Нанесите на нижнюю часть булочки майонез и кетчуп. На майонез и кетчуп положите ломтик сыра, а затем котлету.
+                            На котлету положите лук, лист салата и ломтики помидора. Закройте бургер верхней частью булочки.
+                            Если хотите, чтобы сыр расплавился, можно накрыть сковороду крышкой и оставить бургер на несколько минут.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Как приготовить спагетти с соусом?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Нужно приготовить сами спагетти, которые мы польём полученным соусом. Для этого:
+
+                            Кипятим воду (на 100 граммов воды – 1 литр воды и 10 граммов соли). Нужно уточнять эти пропорции и на упаковке производителя;
+                            Варим в кипятке – особый смысл в том, чтобы их не переварить;
+                            Сливаем кипяток;
+                            Сбрасываем полученные спагетти в глубокую сковороду;
+                            Встряхиваем;
+                            Добавляем полученный соус, опять хорошо встряхиваем сковороду и таким образом, перемешиваем;
+                            Добавляем жареный бекон или грудинку и опять встряхивая хорошо перемешиваем.
+                            Выкладываем в глубокую супницу либо сразу в тарелки. Сверху посыпаем тёртым пармезаном. Можно это делать уже в тарелках при подаче.
+                            Можно украсить при подаче блюдо свежим базиликом. Как вариант, можно обойтись без сливок, без чеснока. Это уже на ваш вкус!
+
+                            Можно попробовать изменить рецептуру на свой вкус, добавив свои ингредиенты.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Как приготовить тирамису?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Ингредиенты:
+
+                            печенье — 200 г;
+                            растворимый кофе — 2 ч. л.;
+                            вода (кипяток) — 300 мл;
+                            мягкий творог — 350 г;
+                            сахар — 2 ст. л.;
+                            молоко — 50 мл;
+                            какао для подачи.
+                            Приготовление:
+
+                            В глубокой ёмкости соедините творог, сахар и молоко, перетрите до пюреобразного состояния с помощью погружного блендера.
+                            Если масса получится слишком густой, добавьте немного молока.
+                            Кофе залейте кипятком и тщательно перемешайте до полного растворения.
+                            Кусочки печенья поочередно обмакивайте в кофе и выкладывайте в порционную креманку.
+                            Сверху на первый слой печенья выложите взбитый творог. Аналогично сделайте 3–4 слоя.
+                            Оставьте десерт настаиваться в течение 60 минут в холодильнике.
+                            Спустя час достаньте десерт из холодильника, посыпьте какао или тёртым шоколадом.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+           <div class="row">
+                <div class="col-md-6">
+                    <h5>Контакты</h5>
+                    <p>Телефон: +7 (999) 999-99-99</p>
+                    <p>Email: example@mail.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Социальные сети</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-vk fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-telegram fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
